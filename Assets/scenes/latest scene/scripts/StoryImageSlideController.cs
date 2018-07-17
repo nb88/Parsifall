@@ -1,5 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/*
+ * By Niels Bekkers, 17-07-2018
+ */
+
 using UnityEngine;
 
 public class StoryImageSlideController : MonoBehaviour {
