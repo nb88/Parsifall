@@ -68,10 +68,8 @@ public class AcceptChoice : MonoBehaviour {
     public IEnumerator Wait(float waitTime)
     {
         this.gameObject.GetComponent<Image>().enabled = false;
-       // this.gameObject.GetComponentInChildren<Text>().enabled = false;
         yield return new WaitForSeconds(waitTime);
         canClickNext = true;
-      //  this.gameObject.GetComponentInChildren<Text>().enabled = true;
         this.gameObject.GetComponent<Image>().enabled = true;
     }
 }
