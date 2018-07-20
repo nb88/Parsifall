@@ -19,7 +19,7 @@ public class AcceptChoice : MonoBehaviour {
     public bool hasAccepted;
 
     private int[] charArray;
-    public Image[] statementText;//= new string[] {"Statement1", "Statement2", "Statement3"};
+    public string[] statementText;//= new string[] {"Statement1", "Statement2", "Statement3"};
 
     private int lastStatement;
     private int currentTextIndex = 0;
@@ -46,7 +46,7 @@ public class AcceptChoice : MonoBehaviour {
             var statementDatas = ScriptableObject.CreateInstance<ScoreKeeper>(); // obsolete?
             lastStatement = currentStatement;
 
-           // statementText   = statementText[currentTextIndex];
+            StatementTextObject.text  = statementText[currentTextIndex];
             currentTextIndex++;
             testingArrayOrList.SaveAnswer();
             storyImageSlideController.MoveStoryImage();
@@ -68,10 +68,10 @@ public class AcceptChoice : MonoBehaviour {
     public IEnumerator Wait(float waitTime)
     {
         this.gameObject.GetComponent<Image>().enabled = false;
-        this.gameObject.GetComponentInChildren<Text>().enabled = false;
+       // this.gameObject.GetComponentInChildren<Text>().enabled = false;
         yield return new WaitForSeconds(waitTime);
         canClickNext = true;
-        this.gameObject.GetComponentInChildren<Text>().enabled = true;
+      //  this.gameObject.GetComponentInChildren<Text>().enabled = true;
         this.gameObject.GetComponent<Image>().enabled = true;
     }
 }
