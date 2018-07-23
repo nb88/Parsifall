@@ -27,6 +27,7 @@ public class CharacterResult : MonoBehaviour {
         {
             Debug.Log("character one has the most points");
             spawnPointHighest.GetComponent<Image>().sprite = ch1;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             //ch1.transform.position = spawnPointHighest.transform.position;
             //ch1.SetActive(true);
@@ -39,6 +40,7 @@ public class CharacterResult : MonoBehaviour {
             //ch2.transform.position = spawnPointHighest.transform.position;
             //ch2.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch2;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 2;
         }
@@ -49,6 +51,7 @@ public class CharacterResult : MonoBehaviour {
             //ch3.transform.position = spawnPointHighest.transform.position;
             // ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch3;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 3;
         }
@@ -58,6 +61,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character four has the most points");
             //ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch4;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 4;
         }
@@ -67,6 +71,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character five has the most points");
             //ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch5;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 5;
         }
@@ -76,6 +81,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character six has the most points");
             //ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch6;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 6; 
         }
@@ -94,6 +100,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character one has the most points");
             //ch1.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch1;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 1;
         }
@@ -103,6 +110,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character two has the most points");
             //ch2.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch2;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 2;
         }
@@ -112,6 +120,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character three has the most points");
             //ch3.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch3;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 3;
         }
@@ -121,6 +130,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character four has the most points");
             //ch3.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch4;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 4;
         }
@@ -130,6 +140,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character five has the most points");
             //ch3.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch5;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 5;
         }
@@ -139,6 +150,7 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character six has the most points");
             //ch3.SetActive(true);
             spawnPointLowest.GetComponent<Image>().sprite = ch6;
+            spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 6;
         }
