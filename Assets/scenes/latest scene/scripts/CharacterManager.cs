@@ -2,7 +2,7 @@
     using System.Collections.Generic;
 using UnityEngine;
 
-public class TestingArrayOrList : MonoBehaviour {
+public class CharacterManager : MonoBehaviour {
 
     public List<Character1PointsData> char1Points = new List<Character1PointsData>();
     public List<Character2PointsData> char2Points = new List<Character2PointsData>();

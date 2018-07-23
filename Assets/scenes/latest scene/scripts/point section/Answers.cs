@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Answers : MonoBehaviour {
 
     private AcceptChoice acceptChoice;
-    private TestingArrayOrList testingArrayOrList;
+    private CharacterManager characterManager;
 
     public Slider swordSlider;
 
@@ -17,7 +17,7 @@ public class Answers : MonoBehaviour {
     void Start()
     {
         acceptChoice = FindObjectOfType<AcceptChoice>();
-        testingArrayOrList = FindObjectOfType<TestingArrayOrList>();
+        characterManager = FindObjectOfType<CharacterManager>();
     }  
 
 
@@ -28,10 +28,10 @@ public class Answers : MonoBehaviour {
             givenAnswer = 1;
             if (acceptChoice.hasAccepted)
             {
-                testingArrayOrList.answerValue[0] = testingArrayOrList.char1Points[acceptChoice.currentStatement].classAwnserValue1;
-                testingArrayOrList.answerValue[1] = testingArrayOrList.char2Points[acceptChoice.currentStatement].classAwnserValue1;
-                testingArrayOrList.answerValue[2] = testingArrayOrList.char3Points[acceptChoice.currentStatement].classAwnserValue1;
-                testingArrayOrList.AnswerCharLoop();
+                characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.AnswerCharLoop();
             }
         }
         if (swordSlider.value == 1)
@@ -39,10 +39,10 @@ public class Answers : MonoBehaviour {
             givenAnswer = 2;
             if (acceptChoice.hasAccepted)
             {
-                testingArrayOrList.answerValue[0] = testingArrayOrList.char1Points[acceptChoice.currentStatement].classAwnserValue2;
-                testingArrayOrList.answerValue[1] = testingArrayOrList.char2Points[acceptChoice.currentStatement].classAwnserValue2;
-                testingArrayOrList.answerValue[2] = testingArrayOrList.char3Points[acceptChoice.currentStatement].classAwnserValue2;
-                testingArrayOrList.AnswerCharLoop();
+                characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.AnswerCharLoop();
             }
         }
         if (swordSlider.value == 2)
@@ -50,10 +50,10 @@ public class Answers : MonoBehaviour {
             givenAnswer = 3;
             if (acceptChoice.hasAccepted)
             {
-                testingArrayOrList.answerValue[0] = testingArrayOrList.char1Points[acceptChoice.currentStatement].classAwnserValue3;
-                testingArrayOrList.answerValue[1] = testingArrayOrList.char2Points[acceptChoice.currentStatement].classAwnserValue3;
-                testingArrayOrList.answerValue[2] = testingArrayOrList.char3Points[acceptChoice.currentStatement].classAwnserValue3;
-                testingArrayOrList.AnswerCharLoop();
+                characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.AnswerCharLoop();
             }
         }
 
@@ -62,10 +62,10 @@ public class Answers : MonoBehaviour {
             givenAnswer = 4;
             if (acceptChoice.hasAccepted)
             {
-                testingArrayOrList.answerValue[0] = testingArrayOrList.char1Points[acceptChoice.currentStatement].classAwnserValue4;
-                testingArrayOrList.answerValue[1] = testingArrayOrList.char2Points[acceptChoice.currentStatement].classAwnserValue4;
-                testingArrayOrList.answerValue[2] = testingArrayOrList.char3Points[acceptChoice.currentStatement].classAwnserValue4;
-                 testingArrayOrList.AnswerCharLoop();
+                characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue4;
+                characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue4;
+                characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue4;
+                characterManager.AnswerCharLoop();
             }
         }
 

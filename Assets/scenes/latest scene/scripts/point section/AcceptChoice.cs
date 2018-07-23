@@ -8,10 +8,11 @@ public class AcceptChoice : MonoBehaviour {
 
 
     private Answers answers;
-    private TestingArrayOrList testingArrayOrList;
+    private CharacterManager characterManager;
     private CharacterResult characterResult;
     private StoryImageSlideController storyImageSlideController;
 
+    public GameObject discussText;
     public Text StatementTextObject;
     public GameObject pauseText;
 
@@ -29,9 +30,9 @@ public class AcceptChoice : MonoBehaviour {
     void Start()
     {
         answers = FindObjectOfType<Answers>();
-        testingArrayOrList = FindObjectOfType<TestingArrayOrList>();
+        characterManager = FindObjectOfType<CharacterManager>();
         characterResult = FindObjectOfType<CharacterResult>();
-        charArray = testingArrayOrList.charArray;
+        charArray = characterManager.charArray;
         storyImageSlideController = FindObjectOfType<StoryImageSlideController>();
     }
 
@@ -48,7 +49,7 @@ public class AcceptChoice : MonoBehaviour {
 
             StatementTextObject.text  = statementText[currentTextIndex];
             currentTextIndex++;
-            testingArrayOrList.SaveAnswer();
+            characterManager.SaveAnswer();
             storyImageSlideController.MoveStoryImage();
              currentStatement++;
             Debug.Log(currentStatement);
@@ -67,9 +68,13 @@ public class AcceptChoice : MonoBehaviour {
 
     public IEnumerator Wait(float waitTime)
     {
+        StatementTextObject.GetComponentInChildren<Text>().enabled = false;
         this.gameObject.GetComponent<Image>().enabled = false;
+        discussText.SetActive(true);
         yield return new WaitForSeconds(waitTime);
         canClickNext = true;
         this.gameObject.GetComponent<Image>().enabled = true;
+        StatementTextObject.GetComponentInChildren<Text>().enabled = true;
+        discussText.SetActive(false);
     }
 }
