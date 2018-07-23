@@ -13,13 +13,12 @@ public class AcceptChoice : MonoBehaviour {
     private StoryImageSlideController storyImageSlideController;
 
     public Text StatementTextObject;
-    public GameObject pauseText;
 
     private bool canClickNext = true;
     public bool hasAccepted;
 
     private int[] charArray;
-    public Image[] statementText;//= new string[] {"Statement1", "Statement2", "Statement3"};
+    public string[] statementText;//= new string[] {"Statement1", "Statement2", "Statement3"};
 
     private int lastStatement;
     private int currentTextIndex = 0;
@@ -46,7 +45,7 @@ public class AcceptChoice : MonoBehaviour {
             var statementDatas = ScriptableObject.CreateInstance<ScoreKeeper>(); // obsolete?
             lastStatement = currentStatement;
 
-           // statementText   = statementText[currentTextIndex];
+            StatementTextObject.text = statementText[currentTextIndex];
             currentTextIndex++;
             testingArrayOrList.SaveAnswer();
             storyImageSlideController.MoveStoryImage();
@@ -54,12 +53,10 @@ public class AcceptChoice : MonoBehaviour {
             Debug.Log(currentStatement);
         }
 
-        if (currentTextIndex == 7 || currentTextIndex == 15)
+        if (currentTextIndex == 5 || currentTextIndex == 11 || currentTextIndex == 18)
         {
             canClickNext = false;
-            pauseText.SetActive(true);
             StartCoroutine(Wait(5));
-            pauseText.SetActive(false);
         }
 
         hasAccepted = false;
