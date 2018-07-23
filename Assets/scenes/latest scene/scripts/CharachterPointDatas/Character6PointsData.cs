@@ -1,7 +1,6 @@
 ﻿
 public class Character6PointsData   {
-
-    public string characterThree;
+    
     public int classAwnserValue1;
     public int classAwnserValue2;
     public int classAwnserValue3;
