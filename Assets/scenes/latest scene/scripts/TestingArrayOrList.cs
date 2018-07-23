@@ -34,7 +34,7 @@ public class TestingArrayOrList : MonoBehaviour {
     void Start ()
     {
         statementAnswers = new int[23];
-        charArray = new int[3];
+        charArray = new int[6];
         answerValue = new int[23]; //MOET 18 WORDEN
         acceptChoice = FindObjectOfType<AcceptChoice>();
         answers = FindObjectOfType<Answers>();

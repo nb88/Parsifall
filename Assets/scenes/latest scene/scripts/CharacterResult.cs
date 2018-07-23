@@ -17,6 +17,8 @@ public class CharacterResult : MonoBehaviour {
 
     private int resultChar;
 
+
+
     public int GetTheHighest(int[] allScores, int highestInt)
     {
         highestInt = allScores.Max();
@@ -26,7 +28,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[0] == highestInt)
         {
             Debug.Log("character one has the most points");
-            spawnPointHighest.GetComponent<Image>().sprite = ch1;
+           // spawnPointHighest.GetComponent<Image>().sprite = ch1;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             //ch1.transform.position = spawnPointHighest.transform.position;
@@ -39,8 +41,8 @@ public class CharacterResult : MonoBehaviour {
             Debug.Log("character two has the most points");
             //ch2.transform.position = spawnPointHighest.transform.position;
             //ch2.SetActive(true);
-            spawnPointHighest.GetComponent<Image>().sprite = ch2;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+           // spawnPointLowest.GetComponent<Image>().enabled = true;
+            spawnPointHighest.GetComponent<Image>().sprite = ch2;       
             spawnPointHighest.SetActive(true);
             resultChar = 2;
         }
@@ -51,7 +53,7 @@ public class CharacterResult : MonoBehaviour {
             //ch3.transform.position = spawnPointHighest.transform.position;
             // ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch3;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+          //  spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 3;
         }
@@ -83,7 +85,7 @@ public class CharacterResult : MonoBehaviour {
             spawnPointHighest.GetComponent<Image>().sprite = ch6;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
-            resultChar = 6; 
+            resultChar = 6;
         }
 
         return highestInt;
