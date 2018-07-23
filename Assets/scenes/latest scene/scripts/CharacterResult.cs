@@ -77,7 +77,7 @@ public class CharacterResult : MonoBehaviour {
             //ch3.SetActive(true);
             spawnPointHighest.GetComponent<Image>().sprite = ch6;
             spawnPointHighest.SetActive(true);
-            resultChar = 6;
+            resultChar = 6; 
         }
 
         return highestInt;

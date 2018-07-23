@@ -14,6 +14,8 @@ public class Character1PointsData   {
         classAwnserValue2 = awnserValue2;
         classAwnserValue3 = awnserValue3;
         classAwnserValue4 = awnserValue4;
+
+        //script is veranderd
     }
 
 }
