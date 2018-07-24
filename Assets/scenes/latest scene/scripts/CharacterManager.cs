@@ -2,7 +2,7 @@
     using System.Collections.Generic;
 using UnityEngine;
 
-public class TestingArrayOrList : MonoBehaviour {
+public class CharacterManager : MonoBehaviour {
 
     public List<Character1PointsData> char1Points = new List<Character1PointsData>();
     public List<Character2PointsData> char2Points = new List<Character2PointsData>();
@@ -20,6 +20,7 @@ public class TestingArrayOrList : MonoBehaviour {
     private int characterFive;
     private int characterSix;
     private int highestInt;
+    private int lowestInt;
     public int currentCharacter = 0;
 
     public int[] answerValue;
@@ -32,9 +33,9 @@ public class TestingArrayOrList : MonoBehaviour {
 
     void Start ()
     {
-        statementAnswers = new int[18];
-        charArray = new int[3];
-        answerValue = new int[18]; //MOET 18 WORDEN
+        statementAnswers = new int[23];
+        charArray = new int[6];
+        answerValue = new int[23]; //MOET 18 WORDEN
         acceptChoice = FindObjectOfType<AcceptChoice>();
         answers = FindObjectOfType<Answers>();
         savingData = FindObjectOfType<DataSavingTest>();
@@ -62,6 +63,12 @@ public class TestingArrayOrList : MonoBehaviour {
         char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // zestiende stelling)
         char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // zeventiende stelling)
         char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // achtiende stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // negentiende stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // twintigste stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // eenentwintigste stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // tweeentwintigste stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // drieentwintigste stelling)
+        char1Points.Add(new Character1PointsData(50, 50, 25, 100)); // vierentwintigste stelling)
         #endregion Character1
 
         #region Character2
@@ -84,6 +91,12 @@ public class TestingArrayOrList : MonoBehaviour {
         char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // zestiende stelling)
         char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // zeventiende stelling)
         char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // achtiende stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // negentiende stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // twintigste stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // eenentwintigste stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // tweeentwintigste stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // drieentwintigste stelling)
+        char2Points.Add(new Character2PointsData(50, 50, 25, 100)); // vierentwintigste stelling)
 
         #endregion Character2
 
@@ -107,6 +120,12 @@ public class TestingArrayOrList : MonoBehaviour {
         char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // zestiende stelling)
         char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // zeventiende stelling)
         char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // achtiende stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // negentiende stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // twintigste stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // eenentwintigste stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // tweeentwintigste stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // drieentwintigste stelling)
+        char3Points.Add(new Character3PointsData(50, 50, 25, 100, "characterThree")); // vierentwintigste stelling)
 
         #endregion Character3
     }
@@ -136,9 +155,10 @@ public class TestingArrayOrList : MonoBehaviour {
             currentCharacter++;
         }
 
-        if (acceptChoice.currentStatement == 17)// MAAK HIER 17 VAN)
+        if (acceptChoice.currentStatement == 23)// MAAK HIER 17 VAN)
         {
             characterResult.GetTheHighest(charArray, highestInt);
+            characterResult.GetTheLowest(charArray, lowestInt);
         }
         currentCharacter = 0;
     }
