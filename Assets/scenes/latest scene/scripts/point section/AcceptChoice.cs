@@ -14,7 +14,7 @@ public class AcceptChoice : MonoBehaviour {
 
     public GameObject discussText;
     public Text StatementTextObject;
-    public GameObject pauseText;
+  //  public GameObject pauseText;
 
     private bool canClickNext = true;
     public bool hasAccepted;
@@ -58,9 +58,9 @@ public class AcceptChoice : MonoBehaviour {
         if (currentTextIndex == 7 || currentTextIndex == 15)
         {
             canClickNext = false;
-            pauseText.SetActive(true);
+          //  pauseText.SetActive(true);
             StartCoroutine(Wait(5));
-            pauseText.SetActive(false);
+         //   pauseText.SetActive(false);
         }
 
         hasAccepted = false;
