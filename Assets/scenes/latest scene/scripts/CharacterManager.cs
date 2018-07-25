@@ -15,7 +15,7 @@ public class CharacterManager : MonoBehaviour {
     private AcceptChoice acceptChoice;
     private Answers answers;
     private CharacterResult characterResult;
-    private DataSavingTest savingData;
+ //   private DataSavingTest savingData;
   
     private int characterOne =0;
     private int characterTwo =1;
@@ -39,10 +39,10 @@ public class CharacterManager : MonoBehaviour {
     {
         statementAnswers = new int[23];
         charArray = new int[6];
-        answerValue = new int[23]; //MOET 18 WORDEN
+        answerValue = new int[23];
         acceptChoice = FindObjectOfType<AcceptChoice>();
         answers = FindObjectOfType<Answers>();
-        savingData = FindObjectOfType<DataSavingTest>();
+        //savingData = FindObjectOfType<DataSavingTest>();
         characterResult = FindObjectOfType<CharacterResult>();
 
         #region Point selection
@@ -229,10 +229,10 @@ public class CharacterManager : MonoBehaviour {
     }
     #endregion Point selection
 
-    public void Update()
-    {
-        StoreData();
-    }
+    //public void Update()
+    //{
+    //    StoreData();
+    //}
 
     public int GivePoints (int classAwnserValue, int character)
     {
@@ -253,7 +253,7 @@ public class CharacterManager : MonoBehaviour {
             currentCharacter++;
         }
 
-        if (acceptChoice.currentStatement == 23)// MAAK HIER 17 VAN)
+        if (acceptChoice.currentStatement == 23)
         {
             characterResult.GetTheHighest(charArray, highestInt);
             characterResult.GetTheLowest(charArray, lowestInt);
@@ -261,17 +261,11 @@ public class CharacterManager : MonoBehaviour {
         currentCharacter = 0;
     }
 
-    public void StoreData()
-    {
-        // PlayerPrefs.SetString("CharNameOne", "Loner");
-
-        if (acceptChoice.currentStatement >= maxStatements)
-        {
-            savingData.SaveData("Loner", "Optimist", "Pesimist", characterOne, characterTwo, characterThree, acceptChoice.currentStatement, answers.givenAnswer);
-
-            Debug.Log("Character One Name: " + PlayerPrefs.GetString("Character One Name: ") + ". Score: "  + PlayerPrefs.GetInt("Loner Score"));
-        }
-
-        //Debug.Log(PlayerPrefs.GetString("CharNameOne"));
-    }
+    //public void StoreData()
+    //{
+    //    if (acceptChoice.currentStatement >= maxStatements)
+    //    {
+    //        savingData.SaveData("Loner", "Optimist", "Pesimist", characterOne, characterTwo, characterThree, acceptChoice.currentStatement, answers.givenAnswer);
+    //    }
+    //}
 }

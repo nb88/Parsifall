@@ -31,9 +31,6 @@ public class StoryImageSlideController : MonoBehaviour {
 
     private AcceptChoice acceptChoice;
 
-
-
-	// Use this for initialization
 	void Awake ()
     {
 
@@ -66,7 +63,6 @@ public class StoryImageSlideController : MonoBehaviour {
         acceptChoice = FindObjectOfType<AcceptChoice>();
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
 

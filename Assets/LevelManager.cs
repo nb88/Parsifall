@@ -27,18 +27,15 @@ public class LevelManager : MonoBehaviour {
     public void LoadGame()
     {
         Application.LoadLevel("Game Scene");
-       // SceneManager.LoadScene("loadscene");
     }
 
     public void LoadCredits()
     {
         Application.LoadLevel("Credits");
-        // SceneManager.LoadScene("loadscene");
     }
 
     public void LoadBack()
     {
         Application.LoadLevel("Start");
-        // SceneManager.LoadScene("loadscene");
     }
 }
