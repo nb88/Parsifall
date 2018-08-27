@@ -419,7 +419,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -1495,7 +1495,7 @@ RectTransform:
   m_Father: {fileID: 824021305}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.000000059604645, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -1773,10 +1773,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f496bfd6ceeb449b80b70456e3dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agreeBar: {fileID: 1145449322}
   discussText: {fileID: 399635637}
   hideable: {fileID: 856884597}
   StatementTextObject: {fileID: 1330217429}
   hasAccepted: 0
+  timeEnded: 0
   statementText:
   - Ik vind een feestje waar alcohol wordt gedronken gezelliger dan een feestje waar
     geen alcohol te krijgen is.
@@ -2078,7 +2080,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -2258,7 +2260,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -2830,8 +2832,8 @@ RectTransform:
   m_Father: {fileID: 1184981434}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6894074}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.0016666389}
+  m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2991,7 +2993,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
@@ -3186,8 +3188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00009371528, y: 0.00002708014}
-  m_SizeDelta: {x: -2.5, y: 1350}
+  m_AnchoredPosition: {x: 0.0000166781, y: 0.00004759558}
+  m_SizeDelta: {x: -2.5, y: 420}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1403896190
 MonoBehaviour:
@@ -3285,7 +3287,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -3736,8 +3738,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1315652638}
   m_HandleRect: {fileID: 1315652637}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.3105926
+  m_Value: 0.9999128
+  m_Size: 0.9983332
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3809,8 +3811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 297.9, y: -675}
-  m_SizeDelta: {x: 589.8, y: 1350}
+  m_AnchoredPosition: {x: 297.9, y: -210}
+  m_SizeDelta: {x: 589.8, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851578424
 MonoBehaviour:
@@ -3832,7 +3834,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -3844,7 +3846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "New Text                                 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  m_Text: "New Text                                 \n\n\n\n\n\n\n\n\n\n\n\n\n"
 --- !u!222 &1851578425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3975,7 +3977,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5177c3eefdf83144892a462f543bb47e, type: 3}
+    m_Font: {fileID: 12800000, guid: f9468e9394fa7dd4692b74bdaf589dfa, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -4356,8 +4358,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 625113642}
   m_HandleRect: {fileID: 625113641}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.9999999
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
