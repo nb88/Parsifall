@@ -19,6 +19,8 @@ public class CharacterResult : MonoBehaviour {
     public Text lowestIntName;
     public Text charOmschrijving;
 
+    public Image highChar;
+    public Image lowChar;
     public GameObject spawnPointHighest;
     public GameObject spawnPointLowest; 
 
@@ -26,12 +28,12 @@ public class CharacterResult : MonoBehaviour {
     public int GetTheHighest(int[] allScores, int highestInt)
     {
         highestInt = allScores.Max();
-        Debug.Log(highestInt);
         
 
         if (allScores[0] == highestInt)
         {
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            highChar.sprite = ch1;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 1;
             highestIntName.text = "De betrouwbare ";
@@ -44,7 +46,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[1] == highestInt)
         {
-            spawnPointHighest.GetComponent<Image>().sprite = ch2;       
+            highChar.sprite = ch2;       
             spawnPointHighest.SetActive(true);
             resultChar = 2;
             highestIntName.text = "Het Feestbeest ";
@@ -56,7 +58,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[2] == highestInt)
         {
-            spawnPointHighest.GetComponent<Image>().sprite = ch3;
+            highChar.sprite = ch3;
             spawnPointHighest.SetActive(true);
             resultChar = 3;
             highestIntName.text = "De Idealist ";
@@ -68,7 +70,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[3] == highestInt)
         {
-            spawnPointHighest.GetComponent<Image>().sprite = ch4;
+            highChar.sprite = ch4;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 4;
@@ -82,7 +84,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[4] == highestInt)
         {
-            spawnPointHighest.GetComponent<Image>().sprite = ch5;
+            highChar.sprite = ch5;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 5;
@@ -95,7 +97,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[5] == highestInt)
         {
-            spawnPointHighest.GetComponent<Image>().sprite = ch6;
+            highChar.sprite = ch6;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 6;
@@ -112,13 +114,12 @@ public class CharacterResult : MonoBehaviour {
     public int GetTheLowest(int[] allScores, int lowestInt)
     {
         lowestInt = allScores.Min();
-        Debug.Log(lowestInt);
 
 
         if (allScores[0] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch1;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch1;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 1;
             lowestIntName.text = "De betrouwbare ";
@@ -126,8 +127,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[1] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch2;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch2;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 2;
             lowestIntName.text = "Het Feestbeest ";
@@ -135,8 +136,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[2] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch3;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch3;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 3;
             lowestIntName.text = "De Idealist ";
@@ -144,8 +145,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[3] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch4;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch4;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 4;
             lowestIntName.text = "De Loner ";
@@ -153,8 +154,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[4] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch5;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch5;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 5;
             lowestIntName.text = "De Redder ";
@@ -162,8 +163,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[5] == lowestInt)
         {
-            spawnPointLowest.GetComponent<Image>().sprite = ch6;
-            spawnPointLowest.GetComponent<Image>().enabled = true;
+            lowChar.sprite = ch6;
+            //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 6;
             lowestIntName.text = "De rebel ";

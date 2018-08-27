@@ -11,6 +11,7 @@ public class CharacterManager : MonoBehaviour {
     public List<Character5PointsData> char5Points = new List<Character5PointsData>();
     public List<Character6PointsData> char6Points = new List<Character6PointsData>();
 
+    public bool hasEnded;
 
     private AcceptChoice acceptChoice;
     private Answers answers;
@@ -25,8 +26,8 @@ public class CharacterManager : MonoBehaviour {
     private int characterSix;
     private int highestInt;
     private int lowestInt;
-    public int currentCharacter = 0;
 
+    public int currentCharacter = 0;
     public int[] answerValue;
     public int[] statementAnswers;
     public int[] charArray;
@@ -255,8 +256,12 @@ public class CharacterManager : MonoBehaviour {
 
         if (acceptChoice.currentStatement == 23)
         {
+            print("hoog en laag weer gegeven");
             characterResult.GetTheHighest(charArray, highestInt);
             characterResult.GetTheLowest(charArray, lowestInt);
+            hasEnded = true;
+            print("has ended is true");
+            // knop moet weg en statement text moet weg
         }
         currentCharacter = 0;
     }
