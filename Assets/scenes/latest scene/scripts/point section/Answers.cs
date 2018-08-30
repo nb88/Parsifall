@@ -8,6 +8,7 @@ public class Answers : MonoBehaviour {
     private AcceptChoice acceptChoice;
     private CharacterManager characterManager;
 
+    public int slidervalue2;
     public Slider swordSlider;
 
     public int givenAnswer;
@@ -68,6 +69,10 @@ public class Answers : MonoBehaviour {
                 characterManager.AnswerCharLoop();
             }
         }
-
-    }           
+    } 
+    
+    public void Onclick(int slidervalue2)
+    {
+        swordSlider.value = slidervalue2;
+    }
 }

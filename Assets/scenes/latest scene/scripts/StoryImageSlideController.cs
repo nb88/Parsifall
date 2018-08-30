@@ -10,6 +10,8 @@ public class StoryImageSlideController : MonoBehaviour {
     // slowly towards it
     private float newPosition;
     private float smoothMove;
+    [SerializeField]
+    private float movementSpeed = 1;
 
     // Give it an incremental value for the image to move with
     [SerializeField]
@@ -70,7 +72,7 @@ public class StoryImageSlideController : MonoBehaviour {
         // change slowly to the required position
         if(smoothMove > newPosition)
         {
-            smoothMove--;
+            smoothMove -= movementSpeed;
             
         }
         // set the new position of the story image
