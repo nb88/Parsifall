@@ -15,8 +15,6 @@ public class CharacterResult : MonoBehaviour {
     public GameObject ch5;
     public GameObject ch6;
 
-    public Animation ch2Ani;
-
     public Text highestIntName;
     public Text lowestIntName;
     public Text charOmschrijving;
@@ -36,6 +34,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[0] == highestInt)
         {
             ch1.transform.position = highChar.position;
+            ch1.transform.localScale = new Vector3(100, 100, 0);
             ch1.SetActive(true);
            // highChar.sprite = ch1;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
@@ -52,6 +51,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[1] == highestInt)
         {
             ch2.transform.position = highChar.position;
+            ch2.transform.localScale = new Vector3(100, 100, 0);
             ch2.SetActive(true);
             //highCharAni = ch2Ani;
             //highChar.sprite = ch2;       
@@ -67,6 +67,8 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[2] == highestInt)
         {
             ch3.SetActive(true);
+            ch3.transform.position = highChar.position;
+            ch3.transform.localScale = new Vector3(100, 100, 0);
             //highChar.sprite = ch3;
             spawnPointHighest.SetActive(true);
             resultChar = 3;
@@ -80,6 +82,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[3] == highestInt)
         {
             ch4.SetActive(true);
+            ch4.transform.localScale = new Vector3(100, 100, 0);
             //highChar.sprite = ch4;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
@@ -95,6 +98,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[4] == highestInt)
         {
             ch5.SetActive(true);
+            ch5.transform.localScale = new Vector3(100, 100, 0);
             //highChar.sprite = ch5;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
@@ -109,6 +113,7 @@ public class CharacterResult : MonoBehaviour {
         if (allScores[5] == highestInt)
         {
             ch6.SetActive(true);
+            ch6.transform.localScale = new Vector3(100, 100, 0);
             //highChar.sprite = ch6;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
@@ -130,6 +135,9 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[0] == lowestInt)
         {
+            ch1.transform.position = lowChar.position;
+            ch1.SetActive(true);
+            ch1.transform.localScale = new Vector3(100, 100, 0);
             //lowChar.sprite = ch1;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
@@ -139,7 +147,10 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[1] == lowestInt)
         {
-           // lowChar.sprite = ch2;
+            ch2.transform.position = lowChar.position;
+            ch2.SetActive(true);
+            ch2.transform.localScale = new Vector3(100, 100, 0);
+            // lowChar.sprite = ch2;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 2;
@@ -148,7 +159,10 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[2] == lowestInt)
         {
-         //   lowChar.sprite = ch3;
+            ch3.transform.position = lowChar.position;
+            ch3.SetActive(true);
+            ch3.transform.localScale = new Vector3(100, 100, 0);
+            //   lowChar.sprite = ch3;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 3;
@@ -157,7 +171,10 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[3] == lowestInt)
         {
-           // lowChar.sprite = ch4;
+            ch4.transform.position = lowChar.position;
+            ch4.SetActive(true);
+            ch4.transform.localScale = new Vector3(100, 100, 0);
+            // lowChar.sprite = ch4;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 4;
@@ -166,7 +183,10 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[4] == lowestInt)
         {
-           // lowChar.sprite = ch5;
+            ch5.transform.position = lowChar.position;
+            ch5.SetActive(true);
+            ch5.transform.localScale = new Vector3(100, 100, 0);
+            // lowChar.sprite = ch5;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 5;
@@ -175,6 +195,9 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[5] == lowestInt)
         {
+            ch6.transform.position = lowChar.position;
+            ch6.SetActive(true);
+            ch6.transform.localScale = new Vector3(100, 100, 0);
             //lowChar.sprite = ch6;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);

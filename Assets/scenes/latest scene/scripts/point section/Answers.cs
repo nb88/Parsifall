@@ -32,6 +32,9 @@ public class Answers : MonoBehaviour {
                 characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue1;
                 characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue1;
                 characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[3] = characterManager.char4Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[4] = characterManager.char5Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[5] = characterManager.char6Points[acceptChoice.currentStatement].classAwnserValue1;
                 characterManager.AnswerCharLoop();
             }
         }
@@ -43,6 +46,9 @@ public class Answers : MonoBehaviour {
                 characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue2;
                 characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue2;
                 characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.answerValue[3] = characterManager.char4Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.answerValue[4] = characterManager.char5Points[acceptChoice.currentStatement].classAwnserValue2;
+                characterManager.answerValue[5] = characterManager.char6Points[acceptChoice.currentStatement].classAwnserValue2;
                 characterManager.AnswerCharLoop();
             }
         }
@@ -54,6 +60,9 @@ public class Answers : MonoBehaviour {
                 characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue3;
                 characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue3;
                 characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.answerValue[3] = characterManager.char4Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.answerValue[4] = characterManager.char5Points[acceptChoice.currentStatement].classAwnserValue3;
+                characterManager.answerValue[5] = characterManager.char6Points[acceptChoice.currentStatement].classAwnserValue3;
                 characterManager.AnswerCharLoop();
             }
         }
@@ -66,6 +75,9 @@ public class Answers : MonoBehaviour {
                 characterManager.answerValue[0] = characterManager.char1Points[acceptChoice.currentStatement].classAwnserValue4;
                 characterManager.answerValue[1] = characterManager.char2Points[acceptChoice.currentStatement].classAwnserValue4;
                 characterManager.answerValue[2] = characterManager.char3Points[acceptChoice.currentStatement].classAwnserValue4;
+                characterManager.answerValue[3] = characterManager.char4Points[acceptChoice.currentStatement].classAwnserValue1;
+                characterManager.answerValue[4] = characterManager.char5Points[acceptChoice.currentStatement].classAwnserValue4;
+                characterManager.answerValue[5] = characterManager.char6Points[acceptChoice.currentStatement].classAwnserValue4;
                 characterManager.AnswerCharLoop();
             }
         }

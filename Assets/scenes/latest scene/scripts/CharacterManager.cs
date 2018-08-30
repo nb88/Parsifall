@@ -40,7 +40,7 @@ public class CharacterManager : MonoBehaviour {
     {
         statementAnswers = new int[23];
         charArray = new int[6];
-        answerValue = new int[23];
+        answerValue = new int[6];
         acceptChoice = FindObjectOfType<AcceptChoice>();
         answers = FindObjectOfType<Answers>();
         //savingData = FindObjectOfType<DataSavingTest>();
@@ -230,10 +230,6 @@ public class CharacterManager : MonoBehaviour {
     }
     #endregion Point selection
 
-    //public void Update()
-    //{
-    //    StoreData();
-    //}
 
     public int GivePoints (int classAwnserValue, int character)
     {
@@ -250,8 +246,11 @@ public class CharacterManager : MonoBehaviour {
     {
         foreach (int o in charArray)
         {
-            charArray[currentCharacter] = GivePoints(answerValue[currentCharacter], o);
-            currentCharacter++;
+            if (currentCharacter < 6)
+            {
+                charArray[currentCharacter] = GivePoints(answerValue[currentCharacter], o);
+                currentCharacter++;
+            }
         }
 
         if (acceptChoice.currentStatement == 23)
