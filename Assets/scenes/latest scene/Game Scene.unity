@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 337871144}
   - component: {fileID: 337871143}
   - component: {fileID: 337871145}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Betrouwbare PNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 341820520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1835,7 +1835,7 @@ Canvas:
   m_GameObject: {fileID: 521904761}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 435276963}
   m_PlaneDistance: 200
   m_PixelPerfect: 0
@@ -2008,7 +2008,6 @@ MonoBehaviour:
   ch4: {fileID: 824810095}
   ch5: {fileID: 2068379693}
   ch6: {fileID: 1017340669}
-  ch2Ani: {fileID: 0}
   highestIntName: {fileID: 386568922}
   lowestIntName: {fileID: 491629390}
   charOmschrijving: {fileID: 1851578424}
@@ -2778,7 +2777,7 @@ GameObject:
   - component: {fileID: 777300305}
   - component: {fileID: 777300304}
   - component: {fileID: 777300306}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Idealist PNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2900,7 +2899,7 @@ GameObject:
   - component: {fileID: 824810096}
   - component: {fileID: 824810097}
   - component: {fileID: 824810098}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Loner PNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3261,7 +3260,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889346445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3889,7 +3888,7 @@ GameObject:
   - component: {fileID: 1017340670}
   - component: {fileID: 1017340671}
   - component: {fileID: 1017340672}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Tegendraads PNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.3, y: 79}
+  m_AnchoredPosition: {x: 8.299999, y: 79}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365054026
@@ -5465,7 +5464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166.3, y: -18.9}
+  m_AnchoredPosition: {x: -166.3, y: -18.900002}
   m_SizeDelta: {x: 82.1, y: 148.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1874588371
@@ -5511,7 +5510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 166.3, y: -18.9}
+  m_AnchoredPosition: {x: 166.3, y: -18.900002}
   m_SizeDelta: {x: 82.1, y: 148.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1882871870
@@ -5763,7 +5762,7 @@ GameObject:
   - component: {fileID: 2068379695}
   - component: {fileID: 2068379694}
   - component: {fileID: 2068379696}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Redder PNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
