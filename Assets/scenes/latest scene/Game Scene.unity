@@ -3398,9 +3398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  imageSlideIncrement: 232
+  imageSlideIncrement: 258
   arrayLength: 27
   initialXPosition: 2648
+  moveImage: 0
 --- !u!212 &974680841
 SpriteRenderer:
   m_ObjectHideFlags: 0

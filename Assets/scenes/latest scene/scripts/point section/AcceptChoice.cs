@@ -62,6 +62,10 @@ public class AcceptChoice : MonoBehaviour {
         } 
 
         hasAccepted = true;
+
+        storyImageSlideController.moveImage++;
+        storyImageSlideController.MoveStoryImage();
+
         if (canClickNext)
         {
             answers.AnswerValueCheck();
@@ -69,8 +73,7 @@ public class AcceptChoice : MonoBehaviour {
 
             StatementTextObject.text  = statementText[currentTextIndex];
             currentTextIndex++;
-            characterManager.SaveAnswer();
-            storyImageSlideController.MoveStoryImage();
+            characterManager.SaveAnswer();            
              currentStatement++;
         }
 

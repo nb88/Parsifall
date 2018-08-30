@@ -1,7 +1,4 @@
-﻿/*
- * By Niels Bekkers, 17-07-2018
- */
-
+﻿
 using UnityEngine;
 
 public class StoryImageSlideController : MonoBehaviour {
@@ -15,7 +12,7 @@ public class StoryImageSlideController : MonoBehaviour {
 
     // Give it an incremental value for the image to move with
     [SerializeField]
-    private int imageSlideIncrement;
+    private float imageSlideIncrement;
 
     // Length should be ammount of statements + breaks (i.e 24 statements + 2 breaks + end = 27 in length)
     [SerializeField]
@@ -29,6 +26,8 @@ public class StoryImageSlideController : MonoBehaviour {
     // These values will be given the position of the object as set in Unity
     private float currentZ;
     private float currentY;
+    
+    public int moveImage = 1;
     
 
     private AcceptChoice acceptChoice;
@@ -86,7 +85,7 @@ public class StoryImageSlideController : MonoBehaviour {
     {
         // Add one to the value of current statement to make sure the right
         // position is taken from the array for the image to move towards
-        newPosition = nextPosition[acceptChoice.currentStatement + 1];
+        newPosition = nextPosition[moveImage];
     }
 
 
