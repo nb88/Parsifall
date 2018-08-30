@@ -8,19 +8,22 @@ public class CharacterResult : MonoBehaviour {
 
     private int resultChar;
 
-    public Sprite ch1;
-    public Sprite ch2;
-    public Sprite ch3;
-    public Sprite ch4;
-    public Sprite ch5;
-    public Sprite ch6;
+    public GameObject ch1;
+    public GameObject ch2;
+    public GameObject ch3;
+    public GameObject ch4;
+    public GameObject ch5;
+    public GameObject ch6;
+
+    public Animation ch2Ani;
 
     public Text highestIntName;
     public Text lowestIntName;
     public Text charOmschrijving;
 
-    public Image highChar;
-    public Image lowChar;
+    public Transform highChar;
+    public Transform lowChar;
+    
     public GameObject spawnPointHighest;
     public GameObject spawnPointLowest; 
 
@@ -32,7 +35,9 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[0] == highestInt)
         {
-            highChar.sprite = ch1;
+            ch1.transform.position = highChar.position;
+            ch1.SetActive(true);
+           // highChar.sprite = ch1;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 1;
@@ -46,7 +51,10 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[1] == highestInt)
         {
-            highChar.sprite = ch2;       
+            ch2.transform.position = highChar.position;
+            ch2.SetActive(true);
+            //highCharAni = ch2Ani;
+            //highChar.sprite = ch2;       
             spawnPointHighest.SetActive(true);
             resultChar = 2;
             highestIntName.text = "Het Feestbeest ";
@@ -58,7 +66,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[2] == highestInt)
         {
-            highChar.sprite = ch3;
+            ch3.SetActive(true);
+            //highChar.sprite = ch3;
             spawnPointHighest.SetActive(true);
             resultChar = 3;
             highestIntName.text = "De Idealist ";
@@ -70,7 +79,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[3] == highestInt)
         {
-            highChar.sprite = ch4;
+            ch4.SetActive(true);
+            //highChar.sprite = ch4;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 4;
@@ -84,7 +94,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[4] == highestInt)
         {
-            highChar.sprite = ch5;
+            ch5.SetActive(true);
+            //highChar.sprite = ch5;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 5;
@@ -97,7 +108,8 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[5] == highestInt)
         {
-            highChar.sprite = ch6;
+            ch6.SetActive(true);
+            //highChar.sprite = ch6;
             spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointHighest.SetActive(true);
             resultChar = 6;
@@ -118,7 +130,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[0] == lowestInt)
         {
-            lowChar.sprite = ch1;
+            //lowChar.sprite = ch1;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 1;
@@ -127,7 +139,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[1] == lowestInt)
         {
-            lowChar.sprite = ch2;
+           // lowChar.sprite = ch2;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 2;
@@ -136,7 +148,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[2] == lowestInt)
         {
-            lowChar.sprite = ch3;
+         //   lowChar.sprite = ch3;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 3;
@@ -145,7 +157,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[3] == lowestInt)
         {
-            lowChar.sprite = ch4;
+           // lowChar.sprite = ch4;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 4;
@@ -154,7 +166,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[4] == lowestInt)
         {
-            lowChar.sprite = ch5;
+           // lowChar.sprite = ch5;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 5;
@@ -163,7 +175,7 @@ public class CharacterResult : MonoBehaviour {
 
         if (allScores[5] == lowestInt)
         {
-            lowChar.sprite = ch6;
+            //lowChar.sprite = ch6;
             //spawnPointLowest.GetComponent<Image>().enabled = true;
             spawnPointLowest.SetActive(true);
             resultChar = 6;
